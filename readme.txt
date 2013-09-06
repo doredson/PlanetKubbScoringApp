@@ -1,6 +1,11 @@
 Planet Kubb Scoring App
 =======================
 
+CONTRIBUTORS/DEVELOPERS
+=======================
+Head over to https://sourceforge.net/projects/planetkubbscoringapp/
+
+
 What is it?
 ===========
 
