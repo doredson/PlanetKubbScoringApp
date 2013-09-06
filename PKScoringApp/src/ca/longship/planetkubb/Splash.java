@@ -9,7 +9,7 @@ import ca.longship.planetkubb.R;
 public class Splash extends Activity{
 
 	TextView versionTitle;
-	String version = "Pre-Beta 0.7 July 16, 2013";
+	String version = "Pre-Beta 0.9 September 10, 2013";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
