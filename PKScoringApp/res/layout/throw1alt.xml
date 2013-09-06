@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Turn Number"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvTurnString"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Turn string goes here"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btTurn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cbKing"
+        android:layout_centerHorizontal="true"
+        android:text="Throw 2" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="25dp"
+        android:text="Player" />
+
+    <RadioGroup
+        android:orientation="vertical"
+        android:layout_below="@id/textView1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/rbPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Player 1" />
+
+        <RadioButton
+            android:id="@+id/rbPlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbPlayer1"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Player 2" />
+
+        <RadioButton
+            android:id="@+id/rbPlayer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbPlayer2"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Player 3" />
+
+        <RadioButton
+            android:id="@+id/rbPlayer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbPlayer3"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Player 4" />
+
+        <RadioButton
+            android:id="@+id/rbPlayer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbPlayer4"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Player 5" />
+
+        <RadioButton
+            android:id="@+id/rbPlayer6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbPlayer5"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Player 6" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvThrow1Error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btTurn2"
+        android:layout_centerHorizontal="true"
+        android:text="Error Message"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cbKing"
+        android:layout_below="@id/rbPlayer6"
+        android:text="Kubbs Hit" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textView1"
+        android:orientation="horizontal" >
+    
+    <RadioButton
+        android:id="@+id/rbKubbHit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_below="@id/textView2"
+        android:text="1" />
+
+    <RadioButton
+        android:id="@+id/rbKubbHit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_toRightOf="@id/rbKubbHit1"
+        android:text="2" />
+
+    <RadioButton
+        android:id="@+id/rbKubbHit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_toRightOf="@id/rbKubbHit2"
+        android:text="3" />
+
+    <RadioButton
+        android:id="@+id/rbKubbHit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_toRightOf="@id/rbKubbHit3"
+        android:text="4" />
+
+    <RadioButton
+        android:id="@+id/rbKubbHit5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_toRightOf="@id/rbKubbHit4"
+        android:text="5" />
+
+    <RadioButton
+        android:id="@+id/rbKubbHit6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_below="@id/rbKubbHit1"
+        android:text="6" />
+
+    <RadioButton
+        android:id="@+id/rbKubbHit7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbKubbHit1"
+        android:layout_toRightOf="@id/rbKubbHit6"
+        android:text="7" />
+
+    <RadioButton
+        android:id="@+id/rbKubbHit8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbKubbHit1"
+        android:layout_toRightOf="@id/rbKubbHit7"
+        android:text="8" />
+
+    <RadioButton
+        android:id="@+id/rbKubbHit9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbKubbHit1"
+        android:layout_toRightOf="@id/rbKubbHit8"
+        android:text="9" />
+
+    <RadioButton
+        android:id="@+id/rbKubbHit10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbKubbHit1"
+        android:layout_toRightOf="@id/rbKubbHit9"
+        android:text="10" />
+</RadioGroup>
+    <CheckBox
+        android:id="@+id/cbKing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@id/rbKubbHit6"
+        android:text="King Hit" />
+
+</RelativeLayout>
